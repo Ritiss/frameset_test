@@ -1,0 +1,38 @@
+body {
+    overflow-x: hidden;
+    background: #14022c;
+    font-family: "Comic Sans MS", "Comic Sans", Tahoma, serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Am {
+    transition: 1s transform ease-in-out;
+}
+
+h1 {
+    cursor: pointer;
+    border-top: 3px solid white;
+    text-align: center;
+}
+
+a, a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.Am:hover {
+    transform: scale(1.1);
+}
+
+a:active {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a:visited {
+    color: #ffffff;
+}

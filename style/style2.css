@@ -1,0 +1,151 @@
+body {
+    overflow-x: hidden;
+    background: #ffffff;
+    font-family: "Comic Sans MS", "Comic Sans", Tahoma, serif;
+    font-size: 20px;
+    color: #14022c;
+}
+
+.Am {
+    margin-left: 30px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline #14022c;
+}
+
+h2 {
+    margin: 15px 0 0 30px;
+}
+
+form {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
+
+form p {
+    margin-bottom: 0;
+}
+
+span {
+    font-size: 40px;
+}
+
+.meow {
+    height: 50px;
+    width: 80px;
+}
+
+.imgKlubok {
+    height: 60px;
+    width: 60px;
+}
+
+.klubok {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    animation: runK 11s infinite, spin 700ms linear infinite;
+}
+
+.mish {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    animation: runM 7s infinite ease-in-out;
+}
+
+.inpBu {
+    background: white;
+}
+
+input {
+    color: #14022c;
+    border: 2px solid #14022c;
+}
+
+.inpBu:hover {
+    cursor: pointer;
+    background: rgba(20, 2, 44, 0.08);
+
+}
+
+.Am p {
+    font-size: 30px;
+}
+
+.footerP {
+    text-align: center;
+}
+
+.krug {
+    margin: 40px 50px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: url("../img/cat.jpg");
+    background-size: 100% 120%;
+    box-shadow: inset 2px 4px 9px rgba(255, 255, 255, 0.7), 2px 5px 12px rgba(20, 2, 44, 0.8);
+    transition: 1s background-size ease-in-out;
+}
+
+.krug:hover {
+    background-size: 150% 170%;
+}
+
+.imgCat {
+    height: 400px;
+    width: 100%;
+}
+
+.img1 {
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img1 img {
+    transition: 1s transform ease-in-out;
+}
+
+.img1 img:hover {
+    transform: scale(1.6);
+}
+
+@keyframes runM {
+    from {
+        left: -10%;
+    }
+    30%,50% {
+        left: 15%;
+    }
+    to {
+        left: 120%;
+    }
+}
+
+@keyframes runK {
+    from {
+        left: -10%;
+    }
+    to {
+        left: 120%;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
